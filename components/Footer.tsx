@@ -15,12 +15,11 @@ const Footer = () => {
         <StyledFooter>
             <FooterContainer>
                 <div>
-                    <Image src={Logo} alt="Logo ImagineShop" width={130} height={60} />
+                    <Image src={Logo} alt="Logo MyShop" width={130} height={60} />
                 </div>
                 <Contact>
-                    Imagine Shop - +55 (48) 3771-1703 / 3371-1823 -
-                    imagine@imagineschool.com.br - Rua Miguel Daux, 129 - Coqueiros -
-                    Florianópolis
+                    My Shop - +55 (48) 3771-1703 / 3371-1823 - myshop@myshop.com.br - Av.
+                    Brasil, 1234 - São Paulo - SP
                 </Contact>
                 <SocialNetworksList>
                     <li>
