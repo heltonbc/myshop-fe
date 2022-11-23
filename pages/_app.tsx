@@ -25,7 +25,7 @@ body {
 
 const theme = {
     colors: {
-        primary: "#f73f01",
+        primary: "#E78000",
         secondary: "#777",
     },
 };

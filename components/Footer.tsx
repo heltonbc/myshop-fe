@@ -15,7 +15,7 @@ const Footer = () => {
         <StyledFooter>
             <FooterContainer>
                 <div>
-                    <Image src={Logo} alt="Logo MyShop" width={130} height={60} />
+                    <Image src={Logo} alt="Logo MyShop" width={350} height={180} />
                 </div>
                 <Contact>
                     My Shop - +55 (48) 3771-1703 / 3371-1823 - myshop@myshop.com.br - Av.

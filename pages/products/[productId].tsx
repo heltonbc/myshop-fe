@@ -128,8 +128,7 @@ const Button = styled.button`
     background-color: ${({ theme }) => theme.colors.primary};
     color: #fff;
     font-weight: 700;
-    font-size: 1rem;
-    font-family: "Montserra", "sans-serif";
+    font-size: 1.1rem;
     cursor: pointer;
     margin: 2.25rem 0;
 `;
