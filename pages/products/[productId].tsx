@@ -55,7 +55,7 @@ const ProductId: NextPage<ProductsProps> = ({ product }) => {
 
                 <ProductDetail>
                     <ImageContainer>
-                        <Image src={product.image} width={200} height={200} />
+                        <Image src={product.image} width={480} height={340} />
                     </ImageContainer>
                     <div>
                         <ProductName>{product.name}</ProductName>

@@ -39,6 +39,7 @@ const Footer = () => {
 
 const StyledFooter = styled.footer`
     background-color: #f4f4f4;
+    margin-top: 11.25rem;
 `;
 
 const FooterContainer = styled.div`

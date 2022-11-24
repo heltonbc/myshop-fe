@@ -24,8 +24,68 @@ const Products = ({ products }: ProductsProps) => {
                                 <a>
                                     <Image
                                         src={product.image}
-                                        width={230}
-                                        height={230}
+                                        width={186}
+                                        height={140}
+                                        alt="Product image"
+                                    />
+
+                                    <ProductName>{product.name}</ProductName>
+
+                                    <ProductPrice>{product.formattedPrice}</ProductPrice>
+
+                                    <ProductSplitPrice>
+                                        10x de {product.splitPrice} sem juros
+                                    </ProductSplitPrice>
+                                </a>
+                            </Link>
+                        </ProductItem>
+                    ))}
+            </ProductList>
+
+            <Title>
+                <span>Ele</span>trônicos
+            </Title>
+
+            <ProductList>
+                {products &&
+                    products.map(product => (
+                        <ProductItem key={product._id}>
+                            <Link href={`/products/${product._id}`}>
+                                <a>
+                                    <Image
+                                        src={product.image}
+                                        width={186}
+                                        height={140}
+                                        alt="Product image"
+                                    />
+
+                                    <ProductName>{product.name}</ProductName>
+
+                                    <ProductPrice>{product.formattedPrice}</ProductPrice>
+
+                                    <ProductSplitPrice>
+                                        10x de {product.splitPrice} sem juros
+                                    </ProductSplitPrice>
+                                </a>
+                            </Link>
+                        </ProductItem>
+                    ))}
+            </ProductList>
+
+            <Title>
+                <span>Ele</span>trodomésticos
+            </Title>
+
+            <ProductList>
+                {products &&
+                    products.map(product => (
+                        <ProductItem key={product._id}>
+                            <Link href={`/products/${product._id}`}>
+                                <a>
+                                    <Image
+                                        src={product.image}
+                                        width={186}
+                                        height={140}
                                         alt="Product image"
                                     />
 
@@ -63,12 +123,13 @@ const ProductList = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.875rem;
-    margin-bottom: 11.25rem;
+    //margin-bottom: 11.25rem;
 `;
 
 const ProductItem = styled.div`
+    text-align: center;
     border: 1px solid black;
-    height: 23.125rem;
+    height: 20rem;
     border: 1px solid #eaeaea;
     border-radius: 4px;
     box-shadow: 5px 0px 10px #d9d9d9;

@@ -13,7 +13,7 @@ const Header: NextPage = () => {
     return (
         <StyledHeader>
             <NavBar>
-                <Image src={Logo} alt="Logo MyShop" width={200} height={100} />
+                <Image src={Logo} alt="Logo MyShop" width={150} height={75} />
                 <MenuList>
                     <MenuItem>
                         <Link href="/">Home</Link>
@@ -41,7 +41,7 @@ const Header: NextPage = () => {
 
 const StyledHeader = styled.header`
     background-color: #f4f4f4;
-    padding: 1.87rem 0 3.125rem 0;
+    //padding: 1.87rem 0 3.125rem 0;
     margin-bottom: 1rem;
 `;
 
