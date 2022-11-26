@@ -7,9 +7,10 @@ import { IProduct } from "../types";
 
 interface ProductsProps {
     products: IProduct[];
+    smartphones: IProduct[];
 }
 
-const Products = ({ products }: ProductsProps) => {
+const Products = ({ products, smartphones }: ProductsProps) => {
     return (
         <ProductContainer>
             <Title>

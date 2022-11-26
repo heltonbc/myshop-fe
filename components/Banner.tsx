@@ -21,8 +21,6 @@ const BannerContainer = styled.section`
     border-top: 3px solid ${({ theme }) => theme.colors.primary};
     border-bottom: 3px solid ${({ theme }) => theme.colors.primary};
     padding-top: 0.2rem;
-    width: 30px;
-    height: 10px;
 `;
 
 export default Banner;
