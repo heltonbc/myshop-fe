@@ -102,6 +102,36 @@ const Products = ({ products, smartphones }: ProductsProps) => {
                         </ProductItem>
                     ))}
             </ProductList>
+
+            <Title>
+                <span>Sma</span>rtphones
+            </Title>
+
+            <ProductList>
+                {smartphones &&
+                    smartphones.map(product => (
+                        <ProductItem key={product._id}>
+                            <Link href={`/smartphones/${product._id}`}>
+                                <a>
+                                    <Image
+                                        src={product.image}
+                                        width={186}
+                                        height={140}
+                                        alt="Product image"
+                                    />
+
+                                    <ProductName>{product.name}</ProductName>
+
+                                    <ProductPrice>{product.formattedPrice}</ProductPrice>
+
+                                    <ProductSplitPrice>
+                                        10x de {product.splitPrice} sem juros
+                                    </ProductSplitPrice>
+                                </a>
+                            </Link>
+                        </ProductItem>
+                    ))}
+            </ProductList>
         </ProductContainer>
     );
 };
