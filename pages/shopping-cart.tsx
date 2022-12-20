@@ -43,7 +43,7 @@ const ShoppingCart: NextPage = () => {
 
     const handleSubmit = async (event: any) => {
         event.preventDefault();
-        const api = "https://imagineshop-helton.herokuapp.com";
+        const api = "https://myshop-be-six.vercel.app/";
         const token = await getTokenLogin(api, email, password);
         if (!token) {
             toast.error("Usuário ou Senha Inválidos", {

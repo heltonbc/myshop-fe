@@ -17,7 +17,7 @@ interface ProductsProps {
 
 export const getServerSideProps: GetServerSideProps = async ctx => {
     const productId = ctx.params?.productId;
-    const api = "https://imagineshop-helton.herokuapp.com";
+    const api = "https://myshop-be-six.vercel.app/";
     const result = await fetch(`${api}/products/${productId}`);
     const product: IProduct = await result.json();
     product.image = `${api}/uploads/${product.fileName}`;
@@ -55,7 +55,12 @@ const ProductId: NextPage<ProductsProps> = ({ product }) => {
 
                 <ProductDetail>
                     <ImageContainer>
-                        <Image src={product.image} width={480} height={340} />
+                        <Image
+                            src={product.image}
+                            width={480}
+                            height={340}
+                            alt="imgproduct-myshop"
+                        />
                     </ImageContainer>
                     <div>
                         <ProductName>{product.name}</ProductName>

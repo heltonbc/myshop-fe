@@ -6,9 +6,11 @@ import Products from "../components/Products";
 import BannerImage from "../public/images/BANNER_01.png";
 
 export const getServerSideProps: GetServerSideProps = async () => {
-    const api = "https://imagineshop-helton.herokuapp.com";
+    const api = "https://myshop-be-six.vercel.app/";
     const result = await fetch(`${api}/products`);
     const data = await result.json();
+
+    //Script de conversão de moeda
     data.forEach((product: any) => {
         product.image = `${api}/uploads/${product.fileName}`;
         product.formattedPrice = new Intl.NumberFormat("pt-BR", {
