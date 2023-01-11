@@ -6,7 +6,7 @@ import Products from "../components/Products";
 import BannerImage from "../public/images/BANNER_01.png";
 
 export const getServerSideProps: GetServerSideProps = async () => {
-    const api = "https://myshop-be-six.vercel.app/";
+    const api = "https://myshop-be-production.up.railway.app";
     const result = await fetch(`${api}/products`);
     const data = await result.json();
 

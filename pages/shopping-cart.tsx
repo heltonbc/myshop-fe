@@ -43,7 +43,7 @@ const ShoppingCart: NextPage = () => {
 
     const handleSubmit = async (event: any) => {
         event.preventDefault();
-        const api = "https://myshop-be-six.vercel.app/";
+        const api = "https://myshop-be-production.up.railway.app";
         const token = await getTokenLogin(api, email, password);
         if (!token) {
             toast.error("Usuário ou Senha Inválidos", {

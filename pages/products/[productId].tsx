@@ -17,7 +17,7 @@ interface ProductsProps {
 
 export const getServerSideProps: GetServerSideProps = async ctx => {
     const productId = ctx.params?.productId;
-    const api = "https://myshop-be-six.vercel.app/";
+    const api = "https://myshop-be-production.up.railway.app";
     const result = await fetch(`${api}/products/${productId}`);
     const product: IProduct = await result.json();
     product.image = `${api}/uploads/${product.fileName}`;
