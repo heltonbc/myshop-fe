@@ -6,7 +6,7 @@ const nextConfig = {
         styledComponents: true,
     },
     images: {
-        domains: ["imagineshop-helton.herokuapp.com"],
+        domains: ["myshop-be-production.up.railway.app"],
     },
 };
 
