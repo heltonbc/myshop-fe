@@ -20,12 +20,12 @@ const Products = ({ products }: ProductsProps) => {
                 {products &&
                     products.map(product => (
                         <ProductItem key={product._id}>
-                            <Link legacyBehavior href={`/products/${product._id}`}>
+                            <Link href={`/products/${product._id}`}>
                                 <a>
                                     <Image
                                         src={product.image}
-                                        width={186}
-                                        height={140}
+                                        width={230}
+                                        height={230}
                                         alt="Product image"
                                     />
 
