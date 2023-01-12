@@ -133,6 +133,7 @@ const ShoppingCart: NextPage = () => {
                                                 src={product.image}
                                                 width={180}
                                                 height={180}
+                                                alt=""
                                             />
                                         </div>
                                         <ProductName>{product.name}</ProductName>
