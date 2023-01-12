@@ -7,10 +7,9 @@ import { IProduct } from "../types";
 
 interface ProductsProps {
     products: IProduct[];
-    smartphones: IProduct[];
 }
 
-const Products = ({ products, smartphones }: ProductsProps) => {
+const Products = ({ products }: ProductsProps) => {
     return (
         <ProductContainer>
             <Title>
@@ -21,67 +20,7 @@ const Products = ({ products, smartphones }: ProductsProps) => {
                 {products &&
                     products.map(product => (
                         <ProductItem key={product._id}>
-                            <Link href={`/products/${product._id}`}>
-                                <a>
-                                    <Image
-                                        src={product.image}
-                                        width={186}
-                                        height={140}
-                                        alt="Product image"
-                                    />
-
-                                    <ProductName>{product.name}</ProductName>
-
-                                    <ProductPrice>{product.formattedPrice}</ProductPrice>
-
-                                    <ProductSplitPrice>
-                                        10x de {product.splitPrice} sem juros
-                                    </ProductSplitPrice>
-                                </a>
-                            </Link>
-                        </ProductItem>
-                    ))}
-            </ProductList>
-
-            <Title>
-                <span>Ele</span>trônicos
-            </Title>
-
-            <ProductList>
-                {products &&
-                    products.map(product => (
-                        <ProductItem key={product._id}>
-                            <Link href={`/products/${product._id}`}>
-                                <a>
-                                    <Image
-                                        src={product.image}
-                                        width={186}
-                                        height={140}
-                                        alt="Product image"
-                                    />
-
-                                    <ProductName>{product.name}</ProductName>
-
-                                    <ProductPrice>{product.formattedPrice}</ProductPrice>
-
-                                    <ProductSplitPrice>
-                                        10x de {product.splitPrice} sem juros
-                                    </ProductSplitPrice>
-                                </a>
-                            </Link>
-                        </ProductItem>
-                    ))}
-            </ProductList>
-
-            <Title>
-                <span>Ele</span>trodomésticos
-            </Title>
-
-            <ProductList>
-                {products &&
-                    products.map(product => (
-                        <ProductItem key={product._id}>
-                            <Link href={`/products/${product._id}`}>
+                            <Link legacyBehavior href={`/products/${product._id}`}>
                                 <a>
                                     <Image
                                         src={product.image}

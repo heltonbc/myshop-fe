@@ -6,7 +6,7 @@ const nextConfig = {
         styledComponents: true,
     },
     images: {
-        domains: ["myshop-be-production.up.railway.app"],
+        domains: ["https://myshop-be-production.up.railway.app"],
     },
 };
 

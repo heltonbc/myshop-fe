@@ -22,7 +22,7 @@ const Header: NextPage = () => {
                         <Link href="/about">Sobre</Link>
                     </MenuItem>
                     <MenuItem>
-                        <Link href="/shopping-cart">
+                        <Link legacyBehavior href="/shopping-cart">
                             <a>
                                 <Image
                                     src={Cart}
